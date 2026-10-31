@@ -1,0 +1,20 @@
+{
+  "name": "thoth-mastra-example",
+  "private": true,
+  "type": "module",
+  "description": "A Mastra support agent whose tool calls are checked by Thoth before they run.",
+  "scripts": {
+    "start": "node --env-file=.env --import tsx src/index.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@atensec/thoth": "0.2.0",
+    "@mastra/core": "1.81.0",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "22.20.5",
+    "tsx": "4.23.15",
+    "typescript": "5.8.3"
+  }
+}
